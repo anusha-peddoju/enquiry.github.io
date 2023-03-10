@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>enquiry</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="enquiry form.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">   
+        
+    </head>
+    <body>
+        <form action="submit-enquiry.php" method="post">
+            <h1 >Enquiry Form</h1>
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+            
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Number">
+            
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+          </form>
+          
+          <!-- Success message -->
+          <div id="success-message" style="display:none;">
+            <p>Thank you for your enquiry submission.</p>
+          </div>
+          <h1 class="d">Product List</h1>
+          <div class="products">
+            <div class="p1">
+      
+                <img src="products/1.jpg" class="img1"  alt="pic"/>
+                <h3 class="p1-title">Kimayra</h3>
+                <p class="dis">Printed Anarkali Kurta Suit Dress</p>
+                <h4 class="p1-cost">&#8377;1374</h4>
+              
+              
+            </div>
+
+           
+              <div class="p1">
+        
+                  <img src="products/2.jpg" class="img1"  alt="pic"/>
+                  <h3 class="p1-title">Lee Cooper</h3>
+                  <p class="dis">Brand Print Crew-Neck T-shirt</p>
+                  <h4 class="p1-cost"> &#8377;210</h4>
+                
+                
+              </div>
+
+              <div class="p1">
+        
+                <img src="products/3.jpg" class="img1"  alt="pic"/>
+                <h3 class="p1-title">Niran Enterprise</h3>
+                <p class="dis">Embellished Round-Neck Fit Flare Dress</p>
+                <h4 class="p1-cost"> &#8377;600</h4>
+          
+              </div>
+
+
+            <div class="p1">
+        
+              <img src="products/4.jpg" class="img1"  alt="pic"/>
+              <h3 class="p1-title">Team Spirit</h3>
+              <p class="dis">Track pants with Contrast Side Taping</p>
+              <h4 class="p1-cost"> &#8377;245</h4>
+          
+             </div>
+
+
+          <div class="p1">
+        
+            <img src="products/5.jpg" class="img1"  alt="pic"/>
+            <h3 class="p1-title">Dennislingo Primium Attire</h3>
+            <p class="dis">Checked Slim Fit Shacket Dress</p>
+            <h4 class="p1-cost"> &#8377;700</h4>
+          
+          
+          </div>
+
+        <div class="p1">
+        
+          <img src="products/6.jpg" class="img1"  alt="pic"/>
+          <h3 class="p1-title">T shirt Truck</h3>
+          <p class="dis">Typography Print T-shirt with Round Neck</p>
+          <h4 class="p1-cost"> &#8377;599A</h4>
+        
+        
+        </div>
+
+        <div class="p1">
+          
+          <img src="products/7.jpg" class="img1"  alt="pic"/>
+          <h3 class="p1-title">Amira's Indian Ethnic Wear</h3>
+          <p class="dis">Floral Print Anarkali Kurta Set with Duppatta</p>
+          <h4 class="p1-cost"> &#8377;1,480</h4>
+        
+        
+        </div>
+
+        <div class="p1">
+            
+          <img src="products/8.jpg" class="img1"  alt="pic"/>
+          <h3 class="p1-title">Buynewtrend</h3>
+          <p class="dis">Jacket with Buttoned Flap Packets</p>
+          <h4 class="p1-cost"> &#8377;555</h4>
+        
+        
+        </div>
+
+
+        <div class="p1">
+              
+          <img src="products/9.jpg" class="img1"  alt="pic"/>
+          <h3 class="p1-title">Campus Sutra</h3>
+          <p class="dis">Zip-Front Bomber Jacket Dress</p>
+          <h4 class="p1-cost"> &#8377;2449</h4>
+        
+        
+        </div>
+
+        <div class="p1">
+                
+          <img src="products/10.jpg" class="img1"  alt="pic"/>
+          <h3 class="p1-title">iVoc</h3>
+          <p class="dis">Flat Front Slim Fit Cargo Pants</p>
+          <h4 class="p1-cost"> &#8377;1247</h4>
+
+
+        </div>
+      
+
+      </div>
+    </body>
+    <script>
+        // Get the form and success message elements
+        const form = document.querySelector('form');
+        const successMessage = document.querySelector('#success-message');
+      
+        // Submit event listener
+        form.addEventListener('submit', (event) => {
+          event.preventDefault(); // Prevent form submission
+         
+          // Hide the form and show the success message
+          form.reset();
+          successMessage.style.display = 'block';
+        });
+      </script>
+      
+</html>          
+
+

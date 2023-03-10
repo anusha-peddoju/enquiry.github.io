@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+
+form{
+
+display: flex;
+flex-direction: column;
+margin-right:20px;
+margin-left: 20px;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(63, 63, 94);
+}
+
+label{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+input,textarea{
+   
+   
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid rgb(153, 168, 130);
+    background: #f1f1f1;
+
+}
+
+button{
+    justify-content: center;
+    text-align: center;
+    width:fit-content;
+    border-color:black;
+    font-size:medium;
+    margin-top:20px;
+    cursor:pointer;
+    border-radius:5px;
+    color:red;
+    font-family:"audiowide";
+    text-align:center;
+}
+
+button:hover{
+    color:green;
+    font-size: 18px;
+}
+
+#success-message
+{
+ font-size: 25px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ text-align: center;
+ color: green;
+ margin-bottom: 50px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.products {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.products:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.p1 {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+     
+  }
+
+.p1-title
+{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(138, 122, 122);
+    margin-left:20px;
+
+}
+
+.dis
+{
+    font-size: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(150, 142, 196);
+    width:200px;
+    margin-left:20px;
+}
+
+.p1-cost{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(138, 122, 122);
+    margin-left:20px;
+    
+}
+
+
+.img1
+{
+    height:200px;
+    width:190px;
+    border-radius: 10px;
+    border:2px;
+    margin-left:20px;
+    
+}
+
+
+
+/* Responsive columns */
+
+
+@media screen and (max-width: 800px){
+
+    .p1{
+        width: 33.333%;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+
+    .p1{
+        width:50%;
+    }
+  }
+@media screen and (max-width: 500px) {
+    .p1{
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .img1
+{
+    height:200px;
+    width:250px;
+    border-radius: 10px;
+    border:2px;
+   margin-left:50px;
+    
+}
+
+.p1-title,.p1-cost,.dis
+{
+
+    margin-left: 50px;
+}
+h1
+{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+input,textarea
+{
+    width:100%;
+}
+  }
